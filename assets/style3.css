@@ -39,6 +39,7 @@
     object-fit: cover;
   }
 
+/*
   section:nth-child(even) {
     background-color: darkcyan;
     color: white;
@@ -62,6 +63,8 @@
 .x.proximity-scroll-snapping {
   scroll-snap-type: x proximity;
 }
+
+*/
 
 .container > div {
   text-align: center;
