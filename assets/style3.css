@@ -1,0 +1,70 @@
+  @import "https://unpkg.com/open-props";
+  @import "https://unpkg.com/open-props/normalize.min.css";
+
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  main {
+    overflow-x: hidden;
+    display: flex;
+  }
+
+
+/*
+  h3 {
+   position: fixed;
+   top: 85px;
+   left: 105px;
+  font-size: 13px;
+    text-align: left;
+  }
+*/
+
+
+  section {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+  }
+
+  img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  section:nth-child(even) {
+    background-color: darkcyan;
+    color: white;
+  }
+
+
+  snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(1rem);
+  }
+
+
+  snaps-inline > * {
+    scroll-snap-align: start;
+  }
+
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.x.proximity-scroll-snapping {
+  scroll-snap-type: x proximity;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
